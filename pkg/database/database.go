@@ -13,9 +13,9 @@ const(
 	DB_DRIVER_MYSQL = "mysql"
 
 	EMOTION_NUM_1 = "happiness"
-	EMOTION_NUM_2 = "natural"
-	EMOTION_NUM_3 = "sadness"
-	EMOTION_NUM_4 = "anger"
+	EMOTION_NUM_2 = ""
+	EMOTION_NUM_3 = "exciting"
+	EMOTION_NUM_4 = "sadness"
 	// SQL Query Format
 	QUERY_FORMAT_UPDATE_TEMPLATE = "UPDATE `emotions` SET %s = %s %s0.001 WHERE id = ?"
 )
@@ -54,13 +54,13 @@ func makeQuery(emotion int, stat bool) string {
 func setColumn(emotion int) string {
 	var column string
 	switch emotion {
-	case 1:
+	case 0:
 		column = EMOTION_NUM_1
-	case 2:
+	case 1:
 		column = EMOTION_NUM_2
-	case 3:
+	case 2:
 		column = EMOTION_NUM_3
-	case 4:
+	case 3:
 		column = EMOTION_NUM_4
 	}
 	return column
