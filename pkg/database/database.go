@@ -54,13 +54,13 @@ func makeQuery(emotion int, stat bool) string {
 func setColumn(emotion int) string {
 	var column string
 	switch emotion {
-	case 1:
+	case 0:
 		column = EMOTION_NUM_1
-	case 2:
+	case 1:
 		column = EMOTION_NUM_2
-	case 3:
+	case 2:
 		column = EMOTION_NUM_3
-	case 4:
+	case 3:
 		column = EMOTION_NUM_4
 	}
 	return column
