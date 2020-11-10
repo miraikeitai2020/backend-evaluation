@@ -13,9 +13,9 @@ const(
 	DB_DRIVER_MYSQL = "mysql"
 
 	EMOTION_NUM_1 = "happiness"
-	EMOTION_NUM_2 = "natural"
-	EMOTION_NUM_3 = "sadness"
-	EMOTION_NUM_4 = "anger"
+	EMOTION_NUM_2 = "exciting"
+	EMOTION_NUM_3 = "calm"
+	EMOTION_NUM_4 = "sadness"
 	// SQL Query Format
 	QUERY_FORMAT_UPDATE_TEMPLATE = "UPDATE `emotions` SET %s = %s %s0.001 WHERE id = ?"
 )
